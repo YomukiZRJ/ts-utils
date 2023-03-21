@@ -1,0 +1,26 @@
+{
+  "name": "typescript-utils",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@yomukizrj/eslint-config-ts": "^0.4.0",
+    "eslint": "^8.36.0",
+    "tsd": "^0.28.0",
+    "typescript": "^5.0.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@yomukizrj/eslint-config-ts"
+    ],
+    "settings": {
+      "import/core-modules": ["tsd"]
+    }
+  }
+}
