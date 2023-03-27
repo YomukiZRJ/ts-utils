@@ -16,6 +16,7 @@
   "include": [
     "utils/**/*.ts",
     "utils/**/*.d.ts",
-    "types/*.d.ts"
+    "types/*.d.ts",
+    "types/**/*.ts"
   ]
 }
