@@ -19,6 +19,12 @@ type ObjectIntersectionTest2 = ObjectIntersection<{ a: string ;b: number}, { b: 
 type DifferenceTest = Difference<'a' | 'b', 'a'> // b
 type DifferenceTest2 = Difference<'a', 'a' | 'b'> // never
 type DifferenceTest3 = Difference<'a', 'b'> // a
+type Brand = 'iphone' | 'xiaomi' | 'honor';
+type Memory = '16G' | '64G';
+type ItemType = 'official' | 'second-hand';
+type SKU = `${Brand}-${Memory}-${ItemType}`;
+type SKU1 = Difference<SKU, 'iphone-16G-official'>
+// expectType<SKU1>('iphone-16G-official')
 type ObjectKeyDifferenceTest = ObjectKeyDifference<{ a: 1 }, { b: 2 }> // 'a'
 
 /**
